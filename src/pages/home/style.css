@@ -1,0 +1,156 @@
+.main {
+    background-color: #000;
+}
+
+#banner {
+    background-image: url('../../assets/banner.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.trayler-content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 110%;
+}
+
+.button {
+    width: 225px;
+    height: 60px;
+    background-color: #ED0010;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navegation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navegation {
+        display: block;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 1200px;
+        margin-bottom: 200px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 37%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sinopse {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+    }
+}
+

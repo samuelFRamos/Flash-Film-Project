@@ -1,0 +1,50 @@
+.actor-cads-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 600px;
+    background-color: #000;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.cards {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+   
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.banner1 {
+    background-image: url('../../assets/barry.jpg');
+}
+
+.banner2 {
+    background-image: url('../../assets/supergirl.jpg');
+}
+
+.banner3 {
+    background-image: url('../../assets/Batman.jpg');
+}

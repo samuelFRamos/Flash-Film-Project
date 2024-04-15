@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.coment_aria {
+    width: 100vh;
+    height: auto;
+    display: none;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.textAria {
+    width: 35%;
+    height: auto;
+    margin: 10px;
+}
+
+.inputAria {
+    width: 100vh;
+    height: auto;
+    display: block;
+    margin: 20px 20px 20px 20px;
+
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ED0010;
+    border-radius: 25px;
+}
+
+.comentario1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.botao {
+    width: 90px;
+    height: 8vh;
+    background-color: #ED0010;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    outline: none;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.comentario1 {
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    justify-content: left;
+    margin: 10px auto;
+    width: 100vh;
+    height: auto;
+    color: #000;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: #fff;
+    padding: 0 0 0 20px;
+}
+
+
+.comentarioPrevius {
+    display: flex;
+    justify-content: left;
+    height: auto;
+    color: #000;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+ion-icon {
+    font-size: 40px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.star {
+    font-size: 30px;
+    background-color: transparent;
+    color: #151324;
+    margin-top: 10px;
+}
+
+.yellow {
+    font-size: 30px;
+    color: rgb(213, 213, 41);
+
+}
+
+.comentario-content {
+    margin: 30px 60px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: justify;
+}
+
+.newuser {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.user1 {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline;
+}
+.user2 {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-bottom: 2px solid #ccc;
+}
+
+h3 {
+    color: #1d1d1d;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+
+.comentario {
+    color: #000;
+}
+
+.fazerComentarioAria {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+

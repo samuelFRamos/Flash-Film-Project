@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+form {
+    width: 120vh;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#textAria1 {
+    width: 80vh;
+    display: flex;
+    margin: 2px auto;
+    height: 7vh;
+    border: 1px solid #000;
+    margin-bottom: 0px;
+}
+
+#textAria2 {
+    width: 80vh;
+    display: flex;
+    margin: 2px auto;
+    height: 7vh;
+    border: 1px solid #000;
+}
+
+#textAria3 {
+    width: 80vh;
+    height: 100px;
+    display: flex;
+    margin: 1px auto;
+    height: 7vh;
+    border: 1px solid #000;
+}
+
+h2 {
+    font-size: 32px;
+    color: #000;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+}
+
+#button {
+    width: 80vh;
+    height: 50px;
+    background-color: #ED0010;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    outline: none;
+    display: flex;
+    margin: 10px auto;
+}
+
+#button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.erroTextAria1 {
+    color: white;
+    font-family: 'Poppins', ' sans-serif';
+    background-color: #ff0000;
+    padding: 5px;
+    border-radius: 0 20px 20px 20px;
+    width: 80vh;
+    display: none;
+    margin: 10px auto;
+}
+
+.erroTextAria2 {
+    color: white;
+    font-family: 'Poppins', ' sans-serif';
+    background-color: #ff0000;
+    padding: 5px;
+    border-radius: 0 20px 20px 20px;
+    width: 80vh;
+    display: none;
+    margin: 10px auto;
+}
+
+.erroTextAria3 {
+    color: white;
+    font-family: 'Poppins', ' sans-serif';
+    background-color: #ff0000;
+    padding: 5px;
+    border-radius: 0 20px 20px 20px;
+    width: 80vh;
+    display: none;
+    margin: 10px auto;
+}
