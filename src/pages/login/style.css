@@ -15,7 +15,7 @@
   
   .app-container {
     background: #191919;
-    height: 450px;
+    height: 400px;
     width: 550px;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     margin: 50px auto;
   }
   
-  h2{
+  .login {
     font-size: 2em;
     color: #eee;
   }
@@ -34,16 +34,7 @@
     margin: 10px 0;
     width: 500px;
   }
-  
-  .checkbox-group {
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .checkbox-group label {
-    font-size: 0.825rem;
-    margin-left: 10px;
-  }
+
   
   .form-group label {
     color: #eee;
@@ -95,9 +86,3 @@
     background-color: #ff0000;
   }
 
-  .obrigado {
-    display: none;
-    color: #eee;
-    font-size: 2em;
-
-  }

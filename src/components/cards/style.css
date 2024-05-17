@@ -30,16 +30,37 @@
     color: #fff;
     font-size: 17px;
     font-family: 'Kdam Thmor Pro', sans-serif;
+
    
 }
 
 .cards:hover {
     transform: scale(1.05);
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+.cards:hover .biografia{
+    display: block;
+    
+}
+
+.biografia {
+    display: none;
 }
 
 .banner1 {
     background-image: url('../../assets/barry.jpg');
 }
+
+
 
 .banner2 {
     background-image: url('../../assets/supergirl.jpg');

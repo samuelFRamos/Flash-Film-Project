@@ -4,7 +4,6 @@ import Logo from '../../assets/Flash-Logo.png'
 import { Link } from "react-router-dom";
 
 function Header() {
-    const [logar, setLogar] = useState(false)
 
 
 
@@ -24,15 +23,15 @@ function Header() {
                         <li id='link' >Contato</li>
                     </Link>
 
-                    <Link to={'/fotos'}>
-                        <li id='link' >Fotos</li>
-                    </Link>
-
                     <Link to={'/comentarios'}>
                         <li id='link' >Comentários</li>
                     </Link>
+
+                    <Link to={'/login'}>
+                        <li id='link'>logar</li>
+                    </Link>
                     
-                    <li id='link' onClick={() => setLogar(!logar)} >{logar ? 'Deslogar' : 'logar'}</li>
+                    {/* onClick={() =>  */}
 
                 </ul>
             </nav>

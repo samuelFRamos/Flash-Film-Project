@@ -1,33 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 .coment_aria {
-    width: 100vh;
-    height: auto;
-    display: none;
-    margin: 10px auto;
-    background-color: #fff;
-    border-radius: 20px;
+    background: #191919;
+    height: 400px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
 }
 
-.textAria {
-    width: 35%;
-    height: auto;
-    margin: 10px;
+.coment_aria input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444;
+    color: #eee;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: 1px solid 444;
+}
+
+.coment_aria label {
+  color: #eee;
+  font-weight: 500;
 }
 
 .inputAria {
-    width: 100vh;
-    height: auto;
-    display: block;
-    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 500px;
 
 }
 
-input {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  .app-container {
+    background: #191919;
+    height: 400px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+  
+  .login {
+    font-size: 2em;
+    color: #eee;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 500px;
+  }
+
+  
+  .form-group label {
+    color: #eee;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444;
+    color: #eee;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: 1px solid 444;
+  }
+  
+  .coment_aria  input::placeholder {
+    color: #999;
+  }
+  
+  .coment_aria .input-error {
+    border: 1px solid rgb(255, 72, 72);
+  }
+  
+  .coment_aria  .error-message {
+    color: rgb(255, 72, 72);
+    font-size: 0.75rem;
+    margin-top: 8px;
+  }
+  
+ 
+  
+  .coment_aria button {
+    border: none;
     padding: 10px;
-    border: 1px solid #ED0010;
-    border-radius: 25px;
-}
+    border-radius: 5px;
+    color: #eee;
+    background-color: #ff3636;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 500ms ease;
+  }
+  
+  .coment_aria  button:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+  }
+
+
+
+
 
 .comentario1 {
     width: 100%;
@@ -38,21 +136,16 @@ input {
 
 
 .botao {
-    width: 90px;
-    height: 8vh;
-    background-color: #ED0010;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .8s;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
     border: none;
-    margin-top: 25px;
-    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #ff3636;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 500ms ease;
 }
 
 .botao:hover {
@@ -76,14 +169,23 @@ input {
     padding: 0 0 0 20px;
 }
 
+.doComment {
+    font-size: 2em;
+    color: #eee;
+}
+
+.name {
+    font-size: 1.2em;
+    color: #eee;
+}
+
 
 .comentarioPrevius {
-    display: flex;
-    justify-content: left;
+    display: block;
+    margin: 20px;
     height: auto;
-    color: #000;
+    color: #eee;
     font-size: 19px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 
@@ -144,8 +246,8 @@ h1 {
     border-bottom: 2px solid #ccc;
 }
 
-h3 {
-    color: #1d1d1d;
+.name h3 {
+    color: #eee;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 1rem;
     font-weight: bold;

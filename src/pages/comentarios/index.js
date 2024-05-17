@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import './style.css'
-import Header from "../../components/header/header";
-import Footer from "../../components/footer";
+
+import { useForm } from "react-hook-form";
+
 
 
 function Comentarios() {
+
     const [nome, setNome] = useState("")
     const [mensagem, setMensagem] = useState("")
 
@@ -16,18 +18,24 @@ function Comentarios() {
     }
 
     function enviar() {
-        const coment_aria = document.querySelector('.coment_aria')
         const newuser = document.querySelector('.newuser')
         const user1 = document.querySelector('.user1')
         const user2 = document.querySelector('.user2')
-        user1.style.width = '352px'
-        user1.style.height = '352px'
-        user2.style.height = '352px'
-        user2.style.width = '352px'
-        newuser.style.width = '352px'
-        newuser.style.height = '352px'
-        newuser.style.display = 'inline'
-        coment_aria.style.display = 'none'
+        const coment_aria = document.querySelector('.coment_aria')
+        const textAria = document.querySelectorAll('.textAria')
+        if(textAria.value = ''){
+            alert('preencha os campos para enviar')
+        } else {
+            user1.style.width = '352px'
+            user1.style.height = '352px'
+            user2.style.height = '352px'
+            user2.style.width = '352px'
+            newuser.style.width = '352px'
+            newuser.style.height = '352px'
+            newuser.style.display = 'inline'
+            coment_aria.style.display = 'none'
+        }
+        
 
     }
 
@@ -35,25 +43,15 @@ function Comentarios() {
         const coment_aria = document.querySelector('.coment_aria')
         const textAria = document.querySelector('.textAria')
         textAria.value = ''
-        coment_aria.style.display = 'block'
+        coment_aria.style.display = 'flex'
 
     }
 
 
     return (
         <>
-            <Header />
+            
 
-            <div className="coment_aria">
-                <div className="inputAria">
-                    <input className="textAria" onChange={nomeValue} type="text" placeholder="Seu Nome" />:
-                    <input className="textAria" onChange={mensagemValue} type="text" placeholder="Sua Mensagem" />
-                    <button onClick={() => enviar()} className="botao"> Enviar </button>
-                    <div className="comentarioPrevius">
-                        <p id="comentPrevius">{`${nome} :    ${mensagem}`}</p>
-                    </div>
-                </div>
-            </div>
             <h1> Comentários</h1>
             <div className="comentario-content">
                 <div className="newuser">
@@ -93,12 +91,29 @@ function Comentarios() {
                 </div>
 
             </div>
+            <div className="coment_aria">
+                <h2 className="doComment">Fazer comentario</h2>
+                <div className="inputAria">
+                <div className="form-group">
+              
+            </div>
+            <label>Nome</label>
+               <input className="textAria" onChange={nomeValue} type="text" placeholder="Seu Nome" /><br></br>
+            <label>Mensagem</label>
+                <input className="textAria" onChange={mensagemValue} type="text" placeholder="Sua Mensagem" /><br></br>
+                     <button onClick={() => enviar()}>Enviar</button>
+                    <div className="comentarioPrevius">
+                        <h3 className="name">{ `${nome}` }</h3>
+                        <p id="comentPrevius">{`${mensagem}`}</p>
+                    </div>
+                </div>
+            </div>
             <div className="fazerComentarioAria">
                 <button onClick={() => fazerComentario()} className="button">Fazer Comentario</button>
             </div>
 
 
-            <Footer />
+            
 
         </>
     )

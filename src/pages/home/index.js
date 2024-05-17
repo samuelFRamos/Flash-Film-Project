@@ -10,7 +10,7 @@ import Footer from "../../components/footer";
 function Home() {
     return (
         <>
-            <Header />
+            
             <div id="banner"></div>
             <div className="trayler-content">
                 <div className="container">
@@ -33,7 +33,7 @@ function Home() {
             </div>
 
             <Cards />
-            <Footer />
+            
         </>
     )
 }
